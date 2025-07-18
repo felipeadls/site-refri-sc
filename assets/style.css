@@ -1942,7 +1942,7 @@ section p {
   }
 }
 
-@media (max-width: 458px) {
+@media (max-width: 390px) {
   #carrossel-banners {
     position: relative;
     width: 100vw;
@@ -1955,7 +1955,7 @@ section p {
   }
 
   .nav-menu .menu a {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   .grid-produtos {
@@ -2021,7 +2021,12 @@ section p {
   }
 
   .section-instagram button {
-    width: 100%;
+    width: 110%;
+    font-size: 1rem;
+  }
+
+  .section-instagram button i {
+    font-size: 1.5rem;
   }
 
   /* PRÊMIOS EM COLUNA */
@@ -2048,19 +2053,20 @@ section p {
   }
 
   .seta-carrossel {
+    font-size: 1rem;
     width: 35px;
     height: 35px;
   }
 
   .seta-carrossel.anterior {
-    left: 5rem;
+    left: 3rem;
   }
 
   .seta-carrossel.proximo {
-    right: 5rem;
+    right: 4rem;
   }
 
   .carrossel-container {
-    width: 95%;
+    width: 85%;
   }
 }
