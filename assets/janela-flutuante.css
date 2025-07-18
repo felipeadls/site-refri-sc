@@ -2203,7 +2203,7 @@
   .modal-info img,
   .modal-info-250ml img {
     width: 100%;
-    max-width: 450px;
+    max-width: 250px;
     margin-bottom: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
   }

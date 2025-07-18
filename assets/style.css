@@ -1942,7 +1942,7 @@ section p {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 458px) {
   #carrossel-banners {
     position: relative;
     width: 100vw;
@@ -1955,7 +1955,7 @@ section p {
   }
 
   .nav-menu .menu a {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .grid-produtos {
