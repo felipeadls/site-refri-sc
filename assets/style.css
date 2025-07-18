@@ -2054,16 +2054,16 @@ section p {
 
   .seta-carrossel {
     font-size: 1rem;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
   .seta-carrossel.anterior {
-    left: 3rem;
+    left: 2rem;
   }
 
   .seta-carrossel.proximo {
-    right: 4rem;
+    right: 2.5rem;
   }
 
   .carrossel-container {
