@@ -996,15 +996,9 @@ section p {
     inset 0 0 6px rgba(243, 250, 51, 0.4), 0 8px 24px rgba(0, 0, 0, 0.7);
   padding: 10px;
   position: relative;
-  width: 420px;
+  width: 300px;
   min-height: fit-content;
   transition: transform 0.3s;
-}
-
-.polaroid:hover {
-  transform: scale(
-    1.03
-  ); /* Efeito de hover que aumenta e rotaciona a polaroid */
 }
 
 .polaroid img {
@@ -1326,7 +1320,6 @@ section p {
   justify-content: center;
   font-weight: bold;
   border-radius: 8px;
-  border: 3px dashed var(--cor-background);
   box-shadow: 0 0 2px #27bd0d, 0 0 5px #27bd0d, 0 0 10px #27bd0d,
     0 0 20px #27bd0d;
   cursor: default;
@@ -1416,7 +1409,7 @@ section p {
 .imagem-localizacao img {
   max-width: 1200px;
   height: auto;
-  width: 1200px;
+  width: 100%;
 }
 
 .texto-localizacao {
@@ -1856,10 +1849,9 @@ section p {
     width: 40%;
   }
 
-    .envase-vidro {
-      margin-top: 3rem; /* Aumente se ainda estiver grudado */
-    }
-
+  .envase-vidro {
+    margin-top: 3rem; /* Aumente se ainda estiver grudado */
+  }
 
   .vidro-topo {
     width: 90%;
@@ -1995,17 +1987,27 @@ section p {
   }
 
   .section-tipos-envases {
-    padding: 2rem 1rem;
+    padding: 0;
+  }
+
+  .section-tipos-envases h2 {
+    width: 250px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
   }
 
   .bloco {
-    width: 90%;
+    width: 70%;
   }
 
-  .envase-pet,
+  .envase-pet {
+    width: 70%;
+    font-size: 2rem;
+  }
   .vidro-topo {
     width: 90%;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .vidro-baixo h3 {
@@ -2073,5 +2075,68 @@ section p {
 
   .carrossel-container {
     width: 85%;
+  }
+
+  .polaroid img {
+    width: 100%;
+    height: auto;
+  }
+
+  .vantagens-item {
+    width: 20rem;
+  }
+
+  .vantagens-item h3 {
+    font-size: 1.3em;
+    color: var(--cor-textos);
+    margin-top: 10px;
+  }
+
+  .vantagens-item p {
+    font-size: 1.1em;
+    color: var(--cor-sidebar);
+    margin-top: 10px;
+  }
+
+  .vantagens-item i {
+    font-size: 2.2rem;
+    color: var(--cor-secundaria);
+  }
+
+  .bloco {
+    font-size: 1rem;
+  }
+
+  .bloco-localizacao {
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .texto-localizacao h4 {
+    font-size: 1rem;
+  }
+
+  .contact-left {
+    padding: 5rem;
+    height: 800px;
+  }
+
+  .contact-left h2 {
+    font-size: 2rem;
+  }
+
+  .contact-inputs::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .contact-left {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .contact-right img {
+    display: none;
   }
 }
