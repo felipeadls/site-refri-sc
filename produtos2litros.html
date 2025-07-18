@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/janela-flutuante.css" />
+
+    <script src="./assets/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <title>Produtos.</title>
+  </head>
+
+  <header>
+    <a href="home.html"
+      ><img
+        class="logo-header"
+        src="./assets/img/Logo-sc.png"
+        alt="logo"
+    /></a>
+
+    <nav class="nav-menu">
+      <strong>
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <!-- <li><a href="qualidade.html">Qualidade</a></li> -->
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="co-packer.html">Co-Packer</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </strong>
+    </nav>
+  </header>
+  <body>
+    <!-- Lista de produtos -->
+
+    <section class="section-produtos">
+      <h1>Conheça nossos sabores</h1>
+
+      <div class="carrossel-container">
+        <button class="seta-carrossel anterior" id="seta-anterior-produto">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <div class="grid-produtos-demonstration" id="carrossel">
+          <div
+            class="produto-item"
+            id="box1"
+            data-color="radial-gradient(circle, #FFFF66 15%, #FFC300 50%, #B8860B 90%)"
+          >
+            <a href="#modal-guarana"
+              ><img
+                src="./assets/img/Guarana-design.png"
+                class="imagem-produto"
+                alt="Guaraná 2L"
+            /></a>
+            <p><strong>Guaraná</strong></p>
+          </div>
+          <div
+            class="produto-item"
+            id="box2"
+            data-color="radial-gradient(circle, #FFFF00 0%, #FFD700 20%, #DAA520 40%, #B8860B 60%, #3B2B0B 80%, #000000 100%)"
+          >
+            <a href="#modal-jubaina"
+              ><img
+                src="./assets/img/Jubaina-2L-design.png"
+                class="imagem-produto"
+                alt="Jubaina"
+            /></a>
+            <p class="p-1l"><strong>Jubaina</strong></p>
+          </div>
+          <div
+            class="produto-item"
+            id="box3"
+            data-color="radial-gradient(circle, #FF8080 5%, #FF6666 25%, #FF4D4D 45%, #FF3333 65%, #FF1A1A 85%, #CC0000 100%)"
+          >
+            <a href="#modal-maca"
+              ><img
+                src="./assets/img/Maçã-design.png"
+                class="imagem-produto"
+                alt="Maçã"
+            /></a>
+            <p><strong>Maçã</strong></p>
+          </div>
+          <div
+            class="produto-item"
+            id="box4"
+            data-color="radial-gradient(circle, #F40009 15%, #B90014 35%, #800020 55%, #400010 75%, #000000 90%)"
+          >
+            <a href="#modal-black-cola"
+              ><img
+                src="./assets/img/Black-cola-design.png"
+                class="imagem-produto"
+                alt="Black Cola"
+            /></a>
+            <p><strong>Black Cola</strong></p>
+          </div>
+          <div
+            class="produto-item"
+            id="box5"
+            data-color="radial-gradient(circle, #FFA500 15%, #FF8C00 35%, #FF6F00 55%, #E65A00 75%, #D94C00 90%)"
+          >
+            <a href="#modal-laranja"
+              ><img
+                src="./assets/img/Laranja-design.png"
+                class="imagem-produto"
+                alt="Laranja"
+            /></a>
+            <p><strong>Laranja</strong></p>
+          </div>
+          <div
+            class="produto-item"
+            id="box6"
+            data-color="radial-gradient(circle, #FFFF00 75%, #BFFF00 85%, #80FF00 95%, #66FF00 100%)"
+          >
+            <a href="#modal-abacaxi"
+              ><img
+                src="./assets/img/Abacaxi-design.png"
+                class="imagem-produto"
+                alt="Abacaxi"
+            /></a>
+            <p><strong>Abacaxi</strong></p>
+          </div>
+          <div
+            class="produto-item"
+            id="box7"
+            data-color="radial-gradient(circle, #D48FFF 5%, #C488F2 25%, #A960E5 45%, #8E38D8 65%, #7310CB 85%, #6A0DAD 100%)"
+          >
+            <a href="#modal-uva"
+              ><img
+                src="./assets/img/Uva-design.png"
+                class="imagem-produto"
+                alt="Uva"
+            /></a>
+            <p><strong>Uva</strong></p>
+          </div>
+          <div
+            class="produto-item"
+            id="box8"
+            data-color="radial-gradient(circle, #A8F5A2 15%, #69DD83 35%, #00C853 55%, #00962A 75%, #006400 90%)"
+          >
+            <a href="#modal-limao"
+              ><img
+                src="./assets/img/Limão-design.png"
+                class="imagem-produto"
+                alt="Limão"
+            /></a>
+            <p><strong>Limão</strong></p>
+          </div>
+        </div>
+
+        <button class="seta-carrossel proximo" id="seta-proximo-produto">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section id="modal-guarana" class="modal-container">
+      <div class="janela-custom-guarana">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <a href="#" class="fechar-modal" id="fechar-modal">&times;</a>
+        <div class="modal-info">
+          <h2>Guaraná São Carlos</h2>
+          <p>
+            Bebida à base de guaraná, com aromas naturais, baixo teor de
+            calorias e redução de açúcares, ideal para quem busca sabor e leveza
+            no dia a dia.
+          </p>
+          <img src="./assets/img/Tabela-nutricional-guarana-2L.jpg" alt="Guaraná 2L" />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-jubaina" class="modal-container">
+      <div class="janela-custom-jubaina">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <a href="#" class="fechar-modal" id="fechar-modal-jubaina">&times;</a>
+        <div class="modal-info">
+          <h2>Jubaina São Carlos</h2>
+          <p>
+            Bebida à base de tubaína, baixo teor de
+            calorias e redução de açúcares — ideal para quem busca sabor,
+            frescor e bem-estar.
+          </p>
+          <img src="./assets/img/Tabela-nutricional-jubaina-2L.jpg" alt="Jubaina 2L" />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-maca" class="modal-container">
+      <div class="janela-custom-maca">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <a href="#" class="fechar-modal" id="fechar-modal">&times;</a>
+        <div class="modal-info">
+          <h2>Maçã São Carlos</h2>
+          <p>
+            Bebida à base de maçã, com aromas naturais, baixo teor de calorias, reduzido em açúcares e com muito sabor, ideal para quem busca leveza no dia a
+            dia.
+          </p>
+          <img src="./assets/img/Tabela-nutricional-maca-2L.jpg" alt="Maçã 2L" />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-black-cola" class="modal-container">
+      <div class="janela-custom-black-cola">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <a href="#" class="fechar-modal" id="fechar-modal">&times;</a>
+        <div class="modal-info">
+          <h2>Black Cola</h2>
+          <p>
+            Bebida à base de cola, com baixo teor de calorias,
+            reduzido em açúcares e com muito sabor, ideal para quem busca leveza no dia a
+            dia.
+          </p>
+          <img src="./assets/img/Tabela-nutricional-black-cola-2L.jpg" alt="Black Cola 2L" />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-laranja" class="modal-container">
+      <div class="janela-custom-laranja">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <a href="#" class="fechar-modal" id="fechar-modal">&times;</a>
+        <div class="modal-info">
+          <h2>Laranja São Carlos</h2>
+          <p>
+            Bebida à base de laranja, com aromas naturais, reduzido em açúcares e com muito sabor, ideal para quem busca leveza no dia a
+            dia.
+          </p>
+          <img src="./assets/img/Tabela-nutricional-laranja-2L.jpg" alt="Laranja 2L" />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-abacaxi" class="modal-container">
+      <div class="janela-custom-abacaxi">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <a href="#" class="fechar-modal" id="fechar-modal">&times;</a>
+        <div class="modal-info">
+          <h2>Abacaxi São Carlos</h2>
+          <p>
+            Bebida à base de abacaxi, com aromas naturais, reduzido em açúcares e com muito sabor, ideal para quem busca leveza no dia a
+            dia.
+          </p>
+          <img src="./assets/img/Tabela-nutricional-abacaxi.jpg" alt="Abacaxi 2L" />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-uva" class="modal-container">
+      <div class="janela-custom-uva">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <a href="#" class="fechar-modal" id="fechar-modal">&times;</a>
+        <div class="modal-info">
+          <h2>Uva São Carlos</h2>
+          <p>
+            Bebida à base de uva, com aromas naturais,
+            reduzido em açúcares e com muito sabor, ideal para quem busca leveza no dia a
+            dia.
+          </p>
+          <img src="./assets/img/Tabela-nutricional-uva.jpg" alt="Uva 2L" />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-limao" class="modal-container">
+      <div class="janela-custom-limao">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <a href="#" class="fechar-modal" id="fechar-modal">&times;</a>
+        <div class="modal-info">
+          <h2>Limão São Carlos</h2>
+          <p>
+            Bebida à base de limão, com aromas naturais, baixo teor de calorias
+            e redução de açúcares, ideal para quem busca sabor e leveza no dia a
+            dia.
+          </p>
+          <img src="./assets/img/Tabela-nutricional-limão.jpg" alt="Limão 2L" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-institucional">
+          <div class="footer-section">
+            <h4>Institucional</h4>
+            <ul>
+              <li>
+                <a href="/politicas-de-privacidade">Políticas de Privacidade</a>
+              </li>
+              <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-endereco">
+          <div class="footer-section">
+            <h4>Nosso Endereço</h4>
+            <a
+              href="https://www.google.com/maps/place/R.+Alessandro+Di+Salvo,+191+-+Jardim+Novo+Horizonte,+S%C3%A3o+Carlos+-+SP,+13571-511"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="address-link"
+            >
+              <address>
+                Rua Alessandro di Salvo, 191<br />
+                Bairro Jardim Novo Horizonte<br />
+                São Carlos - SP - CEP: 13571-511
+              </address>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-redes-sociais">
+          <div class="footer-section">
+            <h4>Redes Sociais</h4>
+            <div class="social-icons">
+              <a
+                class="social-icon"
+                href="https://www.instagram.com/refrisaocarlos/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Siga-nos no Instagram"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                class="social-icon"
+                href="https://www.facebook.com/refrisc/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Siga-nos no Facebook"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                class="social-icon"
+                href="tel:+5516999999999"
+                aria-label="Ligue para nós"
+              >
+                <i class="bi bi-telephone-fill"></i>
+              </a>
+              <a
+                class="social-icon"
+                href="https://www.facebook.com/refrisc/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Siga-nos no Facebook"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="linha-separadora">
+      <div class="footer-bottom">
+        <img
+          class="logo-footer"
+          src="./assets/img/Logo-sc.png"
+          alt="Logo Refrigerantes São Carlos"
+        />
+        <p class="copyright-text">
+          © 2025 Refrigerantes São Carlos. Todos os direitos reservados.
+        </p>
+        <p class="referencia-text">Desenvolvido por Felipe Augusto.</p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    gsap.from("#box1", { opacity: 0.2, y: -100, duration: 1.5 });
+    gsap.from("#box2", { opacity: 0.2, y: -100, duration: 2.5 });
+    gsap.from("#box3", { opacity: 0.2, y: -100, duration: 2.5 });
+    gsap.from("#box4", { opacity: 0.2, y: -100, duration: 1.5 });
+    gsap.from("#box5", { opacity: 0.2, y: 100, duration: 1.5 });
+    gsap.from("#box6", { opacity: 0.2, y: 100, duration: 2.5 });
+    gsap.from("#box7", { opacity: 0.2, y: 100, duration: 2.5 });
+    gsap.from("#box8", { opacity: 0.2, y: 100, duration: 1.5 });
+  </script>
+</html>
