@@ -1609,6 +1609,24 @@ section p {
     margin: 0 auto;
     object-fit: contain;
   }
+  
+  .co-packer-exp {
+    gap: 30px;
+    width: 90vw;
+  }
+
+  .vantagens-beneficios {
+    gap: 30px;
+    width: 90vw;
+  }
+
+  .vantagens-item {
+    max-height: 500px;
+  }
+
+  .vantagens-item p {
+
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1650,6 +1668,8 @@ section p {
   }
 
   .co-packer-exp {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -1715,15 +1735,6 @@ section p {
     min-height: auto;
   }
 
-  .vantagens-beneficios {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .vantagens-item {
-    width: 80%;
-  }
-
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -1772,11 +1783,11 @@ section p {
   }
 
   .seta-carrossel.anterior {
-    left: 5rem;
+    left: 15rem;
   }
 
   .seta-carrossel.proximo {
-    right: 5rem;
+    right: 15rem;
   }
 }
 
@@ -1893,13 +1904,7 @@ section p {
     height: 35px;
   }
 
-  .seta-carrossel.anterior {
-    left: 10rem;
-  }
-
-  .seta-carrossel.proximo {
-    right: 10rem;
-  }
+  
 
   .carrossel-container {
     width: 95%;
@@ -2162,6 +2167,16 @@ section p {
 
   .contact-right img {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .polaroid {
+    width: 90vw;
+  }
+
+  .section-produtos h1 {
+    font-size: 2.5rem;
   }
 }
 
