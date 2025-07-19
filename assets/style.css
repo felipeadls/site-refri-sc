@@ -1623,10 +1623,6 @@ section p {
   .vantagens-item {
     max-height: 500px;
   }
-
-  .vantagens-item p {
-
-  }
 }
 
 @media (max-width: 1200px) {
