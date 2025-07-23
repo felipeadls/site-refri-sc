@@ -963,6 +963,13 @@ section p {
   transform: perspective(500px);
 }
 
+.services h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--cor-secundaria);
+  margin-top: 50px;
+}
+
 .services h2 {
   font-size: 3rem;
   text-align: center;
@@ -996,7 +1003,7 @@ section p {
     inset 0 0 6px rgba(243, 250, 51, 0.4), 0 8px 24px rgba(0, 0, 0, 0.7);
   padding: 10px;
   position: relative;
-  width: 300px;
+  width: 450px;
   min-height: fit-content;
   transition: transform 0.3s;
 }
@@ -1008,10 +1015,10 @@ section p {
 }
 
 .polaroid h2 {
-  margin-top: 10px; /* Espaçamento acima do texto */
-  font-size: 1.4em;
-  font-weight: bold; /* Tamanho da fonte do título */
-  color: var(--cor-secundaria); /* Cor do texto */
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--cor-secundaria); 
 }
 
 .polaroid p {
@@ -1364,7 +1371,6 @@ section p {
   background: #ff0000;
   box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000,
     0 0 40px #ff0000;
-  transition: all 0.3s ease-in-out;
 }
 
 .section-localizacao {
@@ -1558,6 +1564,20 @@ section p {
 }
 
 /* ========== RESPONSIVO ========== */
+
+@media (max-width: 1700px) {
+  .section-historia > div:first-child {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .Imagem-nossa-historia {
+    max-width: 100%;
+    padding: 30px;
+    display: none;
+  }
+}
+
 @media (max-width: 1400px) {
   #carrossel-banners {
     position: relative;
@@ -1603,6 +1623,20 @@ section p {
     margin: 0 auto;
     object-fit: contain;
   }
+  
+  .co-packer-exp {
+    gap: 30px;
+    width: 90vw;
+  }
+
+  .vantagens-beneficios {
+    gap: 30px;
+    width: 90vw;
+  }
+
+  .vantagens-item {
+    max-height: 500px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1644,6 +1678,8 @@ section p {
   }
 
   .co-packer-exp {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -1709,15 +1745,6 @@ section p {
     min-height: auto;
   }
 
-  .vantagens-beneficios {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .vantagens-item {
-    width: 80%;
-  }
-
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -1766,11 +1793,11 @@ section p {
   }
 
   .seta-carrossel.anterior {
-    left: 5rem;
+    left: 15rem;
   }
 
   .seta-carrossel.proximo {
-    right: 5rem;
+    right: 15rem;
   }
 }
 
@@ -1887,13 +1914,7 @@ section p {
     height: 35px;
   }
 
-  .seta-carrossel.anterior {
-    left: 10rem;
-  }
-
-  .seta-carrossel.proximo {
-    right: 10rem;
-  }
+  
 
   .carrossel-container {
     width: 95%;
@@ -1939,20 +1960,24 @@ section p {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 500px) {
   #carrossel-banners {
     position: relative;
     width: 100vw;
-    height: 26vh;
+    height:26vh;
     overflow: hidden;
   }
 
   .logo-header {
-    max-width: 130px;
+    max-width: 150px;
   }
 
   .nav-menu .menu a {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-menu .menu {
+    gap: 10px;
   }
 
   .grid-produtos {
@@ -1991,15 +2016,18 @@ section p {
   }
 
   .section-tipos-envases h2 {
-    width: 250px;
+    width: 350px;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .bloco {
     width: 70%;
   }
+
 
   .envase-pet {
     width: 70%;
@@ -2120,6 +2148,289 @@ section p {
 
   .contact-left {
     padding: 5rem;
+    height: 700px;
+    margin-top: auto;
+  }
+
+  .contact-left button {
+    width: 100%;
+    max-width: 500px;
+    font-size: 1.1rem;
+  }
+
+  .contact-left button i {
+    display: none;
+  }
+
+  .contact-left h2 {
+    font-size: 2rem;
+  }
+
+  .contact-inputs::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .contact-left {
+    width: 100%;
+    max-width: 390px;
+  }
+
+  .contact-right img {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .polaroid {
+    width: 90vw;
+  }
+
+  .section-produtos h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 369px) {
+  #carrossel-banners {
+    position: relative;
+    width: 100vw;
+    height:26vh;
+    overflow: hidden;
+  }
+
+  .logo-header {
+    max-width: 150px;
+  }
+
+  .nav-menu .menu a {
+    font-size: 0.6rem;
+  }
+
+  .nav-menu .menu {
+    gap: 25px;
+  }
+
+  .section-historia > div:first-child {
+    max-width: 90%;
+  }
+
+  .section-historia h2 {
+    font-size: 2rem;
+  }
+
+  .section-historia p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  .Imagem-nossa-historia {
+    display: none;
+  }
+
+  .grid-produtos {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .intro {
+    padding: 60px 20px;
+    height: auto;
+  }
+
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1.1rem;
+  }
+
+  .texto-vantagens h2 {
+    font-size: 2.2rem;
+  }
+
+  .texto-vantagens p {
+    font-size: 1.1rem;
+  }
+
+  .banner-dot {
+    width: 25px;
+    height: 8px;
+  }
+
+  .section-envase h4 {
+    font-size: 2.3rem;
+  }
+
+  .section-tipos-envases {
+    padding: 0;
+    margin-left: auto;
+  }
+
+  .section-tipos-envases h2 {
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bloco {
+    width: 85%;
+  }
+  
+
+  .envase-pet {
+    width: 70%;
+    font-size: 2rem;
+  }
+  .vidro-topo {
+    width: 90%;
+    font-size: 1.6rem;
+  }
+
+  .vidro-baixo h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content {
+    gap: 2rem;
+  }
+
+  .footer-section h4 {
+    font-size: 1.4rem;
+  }
+
+  .copyright-text,
+  .referencia-text {
+    font-size: 0.9rem;
+  }
+
+  .section-instagram h2 {
+    font-size: 2rem;
+  }
+
+  .section-instagram button {
+    width: 115%;
+    font-size: 1rem;
+  }
+
+  .section-instagram button i {
+    font-size: 1.5rem;
+  }
+
+  /* PRÊMIOS EM COLUNA */
+  .premios-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .titulo-premios {
+    font-size: 2rem;
+  }
+
+  .premio-item,
+  .premio-item-ouro {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .premio-item img,
+  .premio-item-ouro img {
+    max-width: 120px;
+  }
+
+  .premio-item h3,
+  .premio-item-ouro h3 {
+    font-size: 1.1rem;
+  }
+
+  .seta-carrossel {
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+  }
+
+  .seta-carrossel.anterior {
+    left: 2rem;
+  }
+
+  .seta-carrossel.proximo {
+    right: 2rem;
+  }
+
+  .carrossel-container {
+    width: 85%;
+  }
+
+  .polaroid {
+    width: 90vw;
+  }
+
+  .polaroid img {
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+  }
+
+  .polaroid h2 {
+    font-size: 1.5rem;
+  }
+
+  .polaroid p {
+    font-size: 1.2rem;
+  }
+
+  .services h1 {
+    font-size: 2.6rem;
+  }
+
+  .services p {
+    font-size: 1.3rem;
+    max-width: 500px;
+  }
+
+  .vantagens-item h3 {
+    font-size: 1.3em;
+    color: var(--cor-textos);
+    margin-top: 10px;
+  }
+
+  .vantagens-item p {
+    font-size: 1.1em;
+    color: var(--cor-sidebar);
+    margin-top: 10px;
+  }
+
+  .vantagens-item i {
+    font-size: 2.2rem;
+    color: var(--cor-secundaria);
+  }
+
+  .bloco {
+    font-size: 1rem;
+  }
+
+  .section-localizacao h2 {
+    align-items: center;
+  }
+
+  .bloco-localizacao {
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .texto-localizacao h4 {
+    font-size: 1rem;
+  }
+
+  .contact-left {
+    padding: 5rem;
     height: 800px;
   }
 
@@ -2128,7 +2439,12 @@ section p {
   }
 
   .contact-inputs::placeholder {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+  }
+
+  .contact-inputs {
+    width: 250px;
+    align-items: flex-start;
   }
 
   .contact-left {
