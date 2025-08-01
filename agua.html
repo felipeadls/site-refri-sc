@@ -10,9 +10,10 @@
     />
 
     <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="stylesheet" href="./assets/janela-flutuante.css" />
+    <link rel="stylesheet" href="./assets/section-produtos.css" />
 
     <script src="./assets/script.js"></script>
+    <script src="./assets/bolhas.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
@@ -20,10 +21,8 @@
   </head>
 
   <header>
-    <a href="home.html"
-      ><img
-        class="logo-header"
-        src="./assets/img/Logo-sc.png"
+    <a href="index.html"
+      ><img class="logo-header" src="./assets/img/Logo-sc.png" alt="logo"
     /></a>
 
     <nav class="nav-menu">
@@ -41,8 +40,61 @@
   <body>
     <!-- Lista de produtos -->
 
-    <section class="section-produtos">
-      <h1>Conheça nossos produtos.</h1>
+    <section class="section-produtos-agua">
+      <h1>Conheça nossos sabores</h1>
+
+      <div class="bolhas">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
       <div class="carrossel-container">
         <button class="seta-carrossel anterior" id="seta-anterior-produto">
@@ -50,19 +102,70 @@
         </button>
 
         <div class="grid-produtos-demonstration" id="carrossel">
-          <div
-            class="produto-item"
-            id="box1"
-            data-color="radial-gradient(circle, #ffffff 15%, #e0e0e0 50%, #b0c4de 90%)"
-          >
-            <a href="#modal-agua-com-gas">
-                <img
-                    src="./assets/img/Agua-com-gás.png"
-                    class="imagem-produto"
-                    alt="Água com gás tradicional."
-                />
-            </a>
-            <p><strong>Água com gás</strong></p>
+          <div class="grid-produtos-demonstration" id="carrossel-produtos">
+            <div
+              class="produto-item"
+              data-section-id="detalhe-agua"
+              data-color="radial-gradient(circle, #ffffff 15%, #e0e0e0 50%, #b0c4de 90%)"
+            >
+              <img
+                src="./assets/img/Agua-com-gás.png"
+                class="imagem-produto"
+                alt="Guaraná 2L"
+              />
+              <p><strong>Água com Gás Tradicional</strong></p>
+            </div>
+
+            <div
+              class="produto-item"
+              data-section-id="detalhe-agua-limao"
+              data-color="radial-gradient(circle, #f4ff81 20%, #d4e157 60%, #aed581 100%)"
+            >
+              <img
+                src="./assets/img/Agua-com-gas-limao.png"
+                class="imagem-produto"
+                alt="Guaraná 1L"
+              />
+              <p><strong>Água com gás Sabor Limão</strong></p>
+            </div>
+
+            <div
+              class="produto-item"
+              data-section-id="detalhe-agua-tangerina"
+              data-color="radial-gradient(circle, #ffe082 20%, #ffcc80 60%, #ffb74d 100%)"
+            >
+              <img
+                src="./assets/img/Agua-com-gas-tangerina.png"
+                class="imagem-produto"
+                alt="Guaraná 600ml"
+              />
+              <p><strong>Água com gás Sabor Tangerina</strong></p>
+            </div>
+
+            <div
+              class="produto-item"
+              data-section-id="detalhe-agua-maracuja"
+              data-color="radial-gradient(circle, #fff176 20%, #ffd54f 60%, #ffca28 100%)"
+            >
+              <img
+                src="./assets/img/Agua-com-gas-maracuja.png"
+                class="imagem-produto"
+                alt="Guaraná 250ml"
+              />
+              <p><strong>Água com gás Sabor Maracuja</strong></p>
+            </div>
+            <div
+              class="produto-item"
+              data-section-id="detalhe-agua-melancia"
+              data-color="radial-gradient(circle, #f8bbd0 20%, #f48fb1 60%, #f06292 100%)"
+            >
+              <img
+                src="./assets/img/Agua-com-gas-melancia.png"
+                class="imagem-produto"
+                alt="Guaraná 2L"
+              />
+              <p><strong>Água com gás Sabor Melancia</strong></p>
+            </div>
           </div>
         </div>
         <button class="seta-carrossel proximo" id="seta-proximo-produto">
@@ -71,71 +174,504 @@
       </div>
     </section>
 
-    <section id="modal-agua-com-gas" class="modal-container">
-      <div class="janela-custom-agua-com-gas">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <a href="#" class="fechar-modal-agua">&times;</a>
-        <div class="modal-info">
-          <h2>Água com gás</h2>
-          <p>
-            Bebida gaseificada sem conservantes e zero sódio. Refrescância garantida em qualquer
-            momento do dia.
-          </p>
-          <img
-            src="./assets/img/Tabela-nutricional-agua-tradicional.jpg"
-            alt="Tabela Nutricional Guaraná 1L"
-          />
+    <!-- Água com Gás Tradicional -->
+
+    <section class="section-descricao-agua">
+      <section
+        class="descricao-produto"
+        id="detalhe-agua"
+        style="display: none"
+      >
+        <h2>Água com Gás Tradicional</h2>
+        <div class="container-descricao">
+          <div class="coluna-imagem">
+            <img src="./assets/img/agua-2L.png" alt="Guaraná 2L" />
+          </div>
+          <div class="coluna-textos">
+            <div class="coluna-esquerda-agua">
+              <div class="titulo-agua">
+                <h3>
+                  <i class="bi bi-info-circle"></i> Informações Nutricionais
+                </h3>
+              </div>
+
+              <div class="valores-nutricionais-agua">
+                <div class="linha-cabecalho">
+                  <div class="subtitulo">
+                    QUANTIDADE POR PORÇÃO DE 200ML (1 COPO)
+                  </div>
+                  <div class="coluna-percentual">%VD(*)</div>
+                </div>
+                <hr class="linha-separadora-tabela-agua" />
+                <table class="tabela-nutricional-agua">
+                  <tbody>
+                    <tr>
+                      <td><strong>Valor Energético</strong>(Kcal)</td>
+                      <td>48</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Carboidratos</strong>(g)</td>
+                      <td>12</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Açúcares totais</strong>(g)</td>
+                      <td>11</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Açucares Adicionados</strong>(g)</td>
+                      <td>11</td>
+                      <td>22</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Sódio</strong>(mg)</td>
+                      <td>16</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr class="linha-separadora-tabela-agua" />
+                <p class="texto-tabela">
+                  NÃO CONTÉM QUANTIDADES SIGNIFICATIVAS DE PROTEÍNAS, GORDURAS
+                  TOTAIS, GORDURAS SATURADAS, GORDURAS TRANS E FIBRAS
+                  ALIMENTARES
+                </p>
+                <hr class="linha-separadora-tabela-agua" />
+                <p class="texto-tabela">
+                  *Percentual de valores diários fornecidos pela porção
+                </p>
+              </div>
+              <p id="texto-ingredientes">
+                <strong>Ingredientes: </strong>Água gaseificada, açúcar, extrato
+                natural de guaraná, aroma idêntico ao natural de guaraná,
+                acidulante ácido cítrico (INS 330), antioxidante ácido ascórbico
+                (INS 300), conservadores benzoato de sódio (INS 211) e sorbato
+                de potássio (INS 202), edulcorantes ciclamato de sódio (INS 952)
+                e sucralose (INS 955), corante caramelo (INS 150d)
+              </p>
+              <p>
+                <strong id="gluten-agua"
+                  >NÃO CONTÉM GLÚTEN, NÃO FERMENTADO, NÃO ALCOÓLICO</strong
+                >
+              </p>
+            </div>
+            <div class="coluna-direita-agua">
+              <h3>Logística</h3>
+              <div>
+                <p><i class="bi bi-inboxes-fill"></i> 100 pacotes por palete</p>
+                <p>
+                  <i class="bi bi-box-seam-fill"></i> 6 unidades por pacotes
+                </p>
+                <p><i class="bi bi-layers-fill"></i> 20 pacotes por lastro</p>
+                <p><i class="bi bi-stack"></i> 5 lastros por palete</p>
+                <p>
+                  <i class="bi bi-shield-fill-check"></i> 5 meses de validade
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Água com Gás Limão -->
+
+    <section class="section-descricao-agua sabor-limao">
+      <section
+      class="descricao-produto"
+      id="detalhe-agua-limao"
+      style="display: none"
+    >
+      <h2>Água com Gás Sabor Limão</h2>
+      <div class="container-descricao">
+        <div class="coluna-imagem">
+          <img src="./assets/img/agua-1L.png" alt="Guaraná 1L" />
+        </div>
+        <div class="coluna-textos">
+          <div class="coluna-esquerda-agua-limao">
+            <div class="titulo-agua">
+              <h3>
+                <i class="bi bi-info-circle"></i> Informações Nutricionais
+              </h3>
+            </div>
+
+            <div class="valores-nutricionais-agua-limao">
+              <div class="linha-cabecalho">
+                <div class="subtitulo">
+                  QUANTIDADE POR PORÇÃO DE 200ML (1 COPO)
+                </div>
+                <div class="coluna-percentual">%VD(*)</div>
+              </div>
+              <hr class="linha-separadora-tabela-agua-limao" />
+              <table class="tabela-nutricional-agua-limao">
+                <tbody>
+                  <tr>
+                    <td><strong>Valor Energético</strong>(Kcal)</td>
+                    <td>48</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Carboidratos</strong>(g)</td>
+                    <td>12</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Açúcares totais</strong>(g)</td>
+                    <td>11</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Açucares Adicionados</strong>(g)</td>
+                    <td>11</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Sódio</strong>(mg)</td>
+                    <td>16</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr class="linha-separadora-tabela-agua-limao" />
+              <p class="texto-tabela">
+                NÃO CONTÉM QUANTIDADES SIGNIFICATIVAS DE PROTEÍNAS, GORDURAS
+                TOTAIS, GORDURAS SATURADAS, GORDURAS TRANS E FIBRAS ALIMENTARES
+              </p>
+              <hr class="linha-separadora-tabela" />
+              <p class="texto-tabela-agua-limao">
+                *Percentual de valores diários fornecidos pela porção
+              </p>
+            </div>
+            <p id="texto-ingredientes">
+              <strong>Ingredientes: </strong>Água gaseificada, açúcar, extrato
+              natural de guaraná, aroma idêntico ao natural de guaraná,
+              acidulante ácido cítrico (INS 330), antioxidante ácido ascórbico
+              (INS 300), conservadores benzoato de sódio (INS 211) e sorbato de
+              potássio (INS 202), edulcorantes ciclamato de sódio (INS 952) e
+              sucralose (INS 955), corante caramelo (INS 150d)
+            </p>
+            <p>
+              <strong id="gluten-agua-limao"
+                >NÃO CONTÉM GLÚTEN, NÃO FERMENTADO, NÃO ALCOÓLICO</strong
+              >
+            </p>
+          </div>
+          <div class="coluna-direita-agua">
+            <h3>Logística</h3>
+            <div>
+              <p><i class="bi bi-inboxes-fill"></i> 140 pacotes por palete</p>
+              <p><i class="bi bi-box-seam-fill"></i> 6 unidades por pacotes</p>
+              <p><i class="bi bi-layers-fill"></i> 28 pacotes por lastro</p>
+              <p><i class="bi bi-stack"></i> 5 lastros por palete</p>
+              <p><i class="bi bi-shield-fill-check"></i> 5 meses de validade</p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+    </section>
+
+    <!-- Água com Gás Sabor Tangerina -->
+
+    <section class="section-descricao-agua sabor-tangerina">
+      <section
+      class="descricao-produto"
+      id="detalhe-agua-tangerina"
+      style="display: none"
+    >
+      <h2>Água com Gás Sabor Tangerina</h2>
+      <div class="container-descricao">
+        <div class="coluna-imagem">
+          <img src="./assets/img/agua-600ml.png" alt="Guaraná 600ml" />
+        </div>
+        <div class="coluna-textos">
+          <div class="coluna-esquerda-agua">
+            <div class="titulo">
+              <h3>
+                <i class="bi bi-info-circle"></i> Informações Nutricionais
+              </h3>
+            </div>
+
+            <div class="valores-nutricionais-agua">
+              <div class="linha-cabecalho">
+                <div class="subtitulo">
+                  QUANTIDADE POR PORÇÃO DE 200ML (1 COPO)
+                </div>
+                <div class="coluna-percentual">%VD(*)</div>
+              </div>
+              <hr class="linha-separadora-tabela-agua" />
+              <table class="tabela-nutricional-agua">
+                <tbody>
+                  <tr>
+                    <td><strong>Valor Energético</strong>(Kcal)</td>
+                    <td>48</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Carboidratos</strong>(g)</td>
+                    <td>12</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Açúcares totais</strong>(g)</td>
+                    <td>11</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Açucares Adicionados</strong>(g)</td>
+                    <td>11</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Sódio</strong>(mg)</td>
+                    <td>16</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr class="linha-separadora-tabela-agua" />
+              <p class="texto-tabela">
+                NÃO CONTÉM QUANTIDADES SIGNIFICATIVAS DE PROTEÍNAS, GORDURAS
+                TOTAIS, GORDURAS SATURADAS, GORDURAS TRANS E FIBRAS ALIMENTARES
+              </p>
+              <hr class="linha-separadora-tabela-agua" />
+              <p class="texto-tabela">
+                *Percentual de valores diários fornecidos pela porção
+              </p>
+            </div>
+            <p id="texto-ingredientes">
+              <strong>Ingredientes: </strong>Água gaseificada, açúcar, extrato
+              natural de guaraná, aroma idêntico ao natural de guaraná,
+              acidulante ácido cítrico (INS 330), antioxidante ácido ascórbico
+              (INS 300), conservadores benzoato de sódio (INS 211) e sorbato de
+              potássio (INS 202), edulcorantes ciclamato de sódio (INS 952) e
+              sucralose (INS 955), corante caramelo (INS 150d)
+            </p>
+            <p>
+              <strong id="gluten-agua"
+                >NÃO CONTÉM GLÚTEN, NÃO FERMENTADO, NÃO ALCOÓLICO</strong
+              >
+            </p>
+          </div>
+          <div class="coluna-direita-agua">
+            <h3>Logística</h3>
+            <div>
+              <p><i class="bi bi-inboxes-fill"></i> 120 pacotes por palete</p>
+              <p><i class="bi bi-box-seam-fill"></i> 12 unidades por pacotes</p>
+              <p><i class="bi bi-layers-fill"></i> 20 pacotes por lastro</p>
+              <p><i class="bi bi-stack"></i> 6 lastros por palete</p>
+              <p><i class="bi bi-shield-fill-check"></i> 5 meses de validade</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+    
+
+    <!-- Água com Gás Sabor Maracujá -->
+
+    <section class="section-descricao-agua sabor-maracuja">
+      <section
+        class="descricao-produto"
+        id="detalhe-agua-maracuja"
+        style="display: none"
+      >
+        <h2>Água com Gás Sabor Maracujá</h2>
+        <div class="container-descricao">
+          <div class="coluna-imagem">
+            <img src="./assets/img/agua-250ml.png" alt="Guaraná 250ml" />
+          </div>
+          <div class="coluna-textos">
+            <div class="coluna-esquerda-agua">
+              <div class="titulo">
+                <h3>
+                  <i class="bi bi-info-circle"></i> Informações Nutricionais
+                </h3>
+              </div>
+
+              <div class="valores-nutricionais-agua">
+                <div class="linha-cabecalho">
+                  <div class="subtitulo">PORÇÃO: 250ml (1 EMBALAGEM)</div>
+                  <div class="coluna-percentual">%VD(*)</div>
+                </div>
+                <hr class="linha-separadora-tabela-agua" />
+                <table class="tabela-nutricional-agua">
+                  <tbody>
+                    <tr>
+                      <td><strong>Valor Energético</strong>(Kcal)</td>
+                      <td>60</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Carboidratos</strong>(g)</td>
+                      <td>12</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Açúcares totais</strong>(g)</td>
+                      <td>11</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Açucares Adicionados</strong>(g)</td>
+                      <td>11</td>
+                      <td>28</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Sódio</strong>(mg)</td>
+                      <td>16</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr class="linha-separadora-tabela-agua" />
+                <p class="texto-tabela">
+                  NÃO CONTÉM QUANTIDADES SIGNIFICATIVAS DE PROTEÍNAS, GORDURAS
+                  TOTAIS, GORDURAS SATURADAS, GORDURAS TRANS E FIBRAS
+                  ALIMENTARES
+                </p>
+                <hr class="linha-separadora-tabela-agua" />
+                <p class="texto-tabela">
+                  *Percentual de valores diários fornecidos pela porção
+                </p>
+              </div>
+              <p id="texto-ingredientes">
+                <strong>Ingredientes: </strong>Água gaseificada, açúcar, extrato
+                natural de guaraná, aroma idêntico ao natural de guaraná,
+                acidulante ácido cítrico (INS 330), antioxidante ácido ascórbico
+                (INS 300), conservadores benzoato de sódio (INS 211) e sorbato
+                de potássio (INS 202), edulcorantes ciclamato de sódio (INS 952)
+                e sucralose (INS 955), corante caramelo (INS 150d)
+              </p>
+              <p>
+                <strong id="gluten-agua"
+                  >NÃO CONTÉM GLÚTEN, NÃO FERMENTADO, NÃO ALCOÓLICO</strong
+                >
+              </p>
+            </div>
+            <div class="coluna-direita-agua">
+              <h3>Logística</h3>
+              <div>
+                <p><i class="bi bi-inboxes-fill"></i> 279 pacotes por palete</p>
+                <p>
+                  <i class="bi bi-box-seam-fill"></i> 12 unidades por pacotes
+                </p>
+                <p><i class="bi bi-layers-fill"></i> 31 pacotes por lastro</p>
+                <p><i class="bi bi-stack"></i> 9 lastros por palete</p>
+                <p>
+                  <i class="bi bi-shield-fill-check"></i> 5 meses de validade
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Água com Gás Sabor Melancia -->
+
+    <section class="section-descricao-agua sabor-melancia">
+      <section
+        class="descricao-produto"
+        id="detalhe-agua-melancia"
+        style="display: none"
+      >
+        <h2>Água com Gás Sabor Melancia</h2>
+        <div class="container-descricao">
+          <div class="coluna-imagem">
+            <img
+              src="./assets/img/agua-250ml.png"
+              alt="Água com Gás Sabor Melancia"
+            />
+          </div>
+          <div class="coluna-textos">
+            <div class="coluna-esquerda-agua">
+              <div class="titulo">
+                <h3>
+                  <i class="bi bi-info-circle"></i> Informações Nutricionais
+                </h3>
+              </div>
+
+              <div class="valores-nutricionais-agua">
+                <div class="linha-cabecalho">
+                  <div class="subtitulo">PORÇÃO: 250ml (1 EMBALAGEM)</div>
+                  <div class="coluna-percentual">%VD(*)</div>
+                </div>
+                <hr class="linha-separadora-tabela-agua" />
+                <table class="tabela-nutricional-agua">
+                  <tbody>
+                    <tr>
+                      <td><strong>Valor Energético</strong>(Kcal)</td>
+                      <td>60</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Carboidratos</strong>(g)</td>
+                      <td>12</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Açúcares totais</strong>(g)</td>
+                      <td>11</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Açucares Adicionados</strong>(g)</td>
+                      <td>11</td>
+                      <td>28</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Sódio</strong>(mg)</td>
+                      <td>16</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr class="linha-separadora-tabela-agua" />
+                <p class="texto-tabela">
+                  NÃO CONTÉM QUANTIDADES SIGNIFICATIVAS DE PROTEÍNAS, GORDURAS
+                  TOTAIS, GORDURAS SATURADAS, GORDURAS TRANS E FIBRAS
+                  ALIMENTARES
+                </p>
+                <hr class="linha-separadora-tabela-agua" />
+                <p class="texto-tabela">
+                  *Percentual de valores diários fornecidos pela porção
+                </p>
+              </div>
+              <p id="texto-ingredientes">
+                <strong>Ingredientes: </strong>Água gaseificada, açúcar, extrato
+                natural de guaraná, aroma idêntico ao natural de guaraná,
+                acidulante ácido cítrico (INS 330), antioxidante ácido ascórbico
+                (INS 300), conservadores benzoato de sódio (INS 211) e sorbato
+                de potássio (INS 202), edulcorantes ciclamato de sódio (INS 952)
+                e sucralose (INS 955), corante caramelo (INS 150d)
+              </p>
+              <p>
+                <strong id="gluten-agua"
+                  >NÃO CONTÉM GLÚTEN, NÃO FERMENTADO, NÃO ALCOÓLICO</strong
+                >
+              </p>
+            </div>
+            <div class="coluna-direita-agua">
+              <h3>Logística</h3>
+              <div>
+                <p><i class="bi bi-inboxes-fill"></i> 279 pacotes por palete</p>
+                <p>
+                  <i class="bi bi-box-seam-fill"></i> 12 unidades por pacotes
+                </p>
+                <p><i class="bi bi-layers-fill"></i> 31 pacotes por lastro</p>
+                <p><i class="bi bi-stack"></i> 9 lastros por palete</p>
+                <p>
+                  <i class="bi bi-shield-fill-check"></i> 5 meses de validade
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <footer class="site-footer">
@@ -211,7 +747,7 @@
           </div>
         </div>
       </div>
-      <hr class="linha-separadora">
+      <hr class="linha-separadora" />
       <div class="footer-bottom">
         <img
           class="logo-footer"
@@ -225,9 +761,4 @@
       </div>
     </footer>
   </body>
-
-  <script>
-    gsap.from("#box1", { opacity: 0.2, y: -100, duration: 1.5});;
-  </script>
-
 </html>

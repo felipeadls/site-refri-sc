@@ -4,7 +4,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -260,13 +259,6 @@ section p {
 }
 
 .section-historia {
-  box-shadow: inset 0 0 8px 2px rgba(243, 250, 51, 1),
-    inset 0 0 20px 8px rgba(243, 250, 51, 0.9),
-    0 0 8px 2px rgba(243, 250, 51, 1), 0 0 20px 8px rgba(243, 250, 51, 0.9),
-    0 0 40px 16px rgba(243, 250, 51, 0.6),
-    0 0 80px 32px rgba(243, 250, 51, 0.35),
-    0 0 120px 48px rgba(243, 250, 51, 0.15);
-  transform: perspective(500px);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -277,10 +269,13 @@ section p {
 }
 
 .section-historia > div:first-child {
-  flex: 1 1 500px;
+  flex: 1 1 400px;
   max-width: 40%;
-  padding: 40px;
-  background: var(--cor-background);
+  padding: 30px;
+  background-image: url(img/Background-historia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 60px;
   box-shadow: inset 0 0 12px rgba(255, 255, 0, 0.8),
     0 0 24px rgba(255, 255, 0, 0.9), 0 0 48px rgba(255, 255, 0, 1),
@@ -293,7 +288,7 @@ section p {
 .section-historia h2 {
   text-align: center;
   font-family: var(--fonte-principal);
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   color: var(--cor-primaria);
   text-shadow: 1px 1px 0 #999, 1px 1px 0 #777, 2px 2px 0 #555, 3px 3px 0 #333,
@@ -302,9 +297,9 @@ section p {
 }
 
 .section-historia p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 16px;
   text-align: justify;
   color: var(--cor-textos);
@@ -319,8 +314,8 @@ section p {
 }
 
 .Imagem-nossa-historia img {
-  max-width: 1350px;
-  height: auto;
+  max-width: 100%;
+  height: 100%;
   border-radius: 12px;
   filter: drop-shadow(0 0 6px rgba(255, 255, 0, 0.8))
     drop-shadow(0 0 12px rgba(255, 255, 0, 0.9))
@@ -354,10 +349,7 @@ section p {
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-radius: 60px;
-  box-shadow: inset 0 0 12px rgba(255, 255, 0, 0.8),
-    0 0 24px rgba(255, 255, 0, 0.9), 0 0 48px rgba(255, 255, 0, 1),
-    0 20px 60px rgba(0, 0, 0, 0.5);
-  min-height: 280px; /* IMPORTANTE: define altura para alinhar visualmente */
+  min-height: 280px;
 }
 
 /* Título no topo */
@@ -566,63 +558,321 @@ section p {
 
 .grid-produtos {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 40px 40px;
-  max-width: 1750px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  width: 100%;
+  max-width: 1300px;
   margin: 50px auto;
-  padding: 20px;
-  text-align: center;
-  position: relative;
+  padding: 4rem;
+  justify-content: center;
 }
 
-.grid-produtos .produto-item {
+.produto-item-guarana,
+.produto-item-jubaina,
+.produto-item-maca,
+.produto-item-black-cola,
+.produto-item-laranja,
+.produto-item-abacaxi,
+.produto-item-uva,
+.produto-item-limao,
+.produto-item-agua {
+  background: #FFF4A4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+  transform: perspective(500px);
+  border: 3px solid var(--cor-secundaria);
+  padding: 20px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  padding: 20px;
-  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  height: 100%;
 }
 
-.grid-produtos .imagem-container {
-  height: auto;
+.produto-item-guarana p,
+.produto-item-jubaina p,
+.produto-item-maca p,
+.produto-item-black-cola p,
+.produto-item-laranja p,
+.produto-item-abacaxi p,
+.produto-item-uva p,
+.produto-item-limao p,
+.produto-item-agua p {
+  font-size: 1.8rem;
+}
+
+.produto-item-guarana:hover {
+  transform: translateY(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(circle, #ffff66 15%, #ffc300 50%, #b8860b 90%);
+  border: 1.5px solid var(--cor-background);
+  box-shadow: 
+  inset 0 0 10px rgba(255, 220, 50, 0.3),
+  inset 0 0 20px rgba(255, 200, 0, 0.2),
+  0 0 20px rgba(255, 200, 0, 0.4),
+  0 0 30px rgba(255, 180, 0, 0.3);
+  cursor: pointer;
+}
+
+.produto-item-guarana:hover img {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6))
+    drop-shadow(0 0 12px rgba(0, 0, 0, 0.9));
+}
+
+.produto-item-jubaina:hover {
+  transform: translateY(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(
+    circle,
+    #ffff00 0%,
+    #ffd700 20%,
+    #daa520 40%,
+    #b8860b 60%,
+    #3b2b0b 80%
+  );
+  border: 1.5px solid var(--cor-background);
+  box-shadow: 
+  inset 0 0 10px rgba(255, 220, 50, 0.3),
+  inset 0 0 20px rgba(255, 200, 0, 0.2),
+  0 0 20px rgba(255, 200, 0, 0.4),
+  0 0 30px rgba(255, 180, 0, 0.3);
+  cursor: pointer;
+}
+
+.produto-item-jubaina:hover img {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6))
+    drop-shadow(0 0 12px rgba(0, 0, 0, 0.9));
+}
+
+.produto-item-jubaina:hover p {
+  color: var(--cor-background);
+}
+
+.produto-item-maca:hover {
+  transform: translateY(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(
+    circle,
+    #ff8080 5%,
+    #ff6666 25%,
+    #ff4d4d 45%,
+    #ff3333 65%,
+    #ff1a1a 85%,
+    #cc0000 100%
+  );
+  border: 1.5px solid var(--cor-background);
+  box-shadow: 
+  inset 0 0 10px rgba(255, 80, 80, 0.3),
+  inset 0 0 20px rgba(255, 50, 50, 0.2),
+  0 0 20px rgba(255, 50, 50, 0.4),
+  0 0 30px rgba(200, 40, 40, 0.3);
+  cursor: pointer;
+}
+
+.produto-item-maca:hover img {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6))
+    drop-shadow(0 0 12px rgba(0, 0, 0, 0.9));
+}
+
+.produto-item-maca:hover p {
+  color: var(--cor-background);
+}
+
+.produto-item-black-cola:hover {
+  color: var(--cor-background);
+  transform: translateY(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(
+    circle,
+    #f40009 15%,
+    #b90014 35%,
+    #800020 55%,
+    #400010 75%,
+    #000000 90%
+  );
+  border: 1.5px solid var(--cor-background);
+  box-shadow: 
+  inset 0 0 8px rgba(200, 120, 70, 0.3),
+  inset 0 0 15px rgba(163, 102, 60, 0.2),
+  0 0 25px rgba(200, 120, 70, 0.4),
+  0 0 35px rgba(180, 90, 40, 0.3),
+  0 0 50px rgba(150, 70, 30, 0.2);
+  cursor: pointer;
+}
+
+.produto-item-black-cola:hover img {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6))
+    drop-shadow(0 0 12px rgba(255, 255, 255, 0.9));
+}
+
+.produto-item-black-cola:hover p {
+  color: var(--cor-background);
+}
+
+.produto-item-laranja:hover {
+  transform: translateY(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(circle, #FFA500 15%, #FF8C00 35%, #FF6F00 55%, #E65A00 75%, #D94C00 90%);
+  border: 1.5px solid var(--cor-background);
+  box-shadow: 
+  inset 0 0 10px rgba(255, 140, 40, 0.3),
+  inset 0 0 20px rgba(255, 120, 30, 0.2),
+  0 0 15px rgba(255, 100, 20, 0.4),
+  0 0 25px rgba(255, 90, 0, 0.3),
+  0 0 40px rgba(255, 80, 0, 0.3);
+  cursor: pointer;
+}
+
+.produto-item-laranja:hover img {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6))
+    drop-shadow(0 0 12px rgba(0, 0, 0, 0.9));
+}
+
+.produto-item-laranja:hover p {
+  color: var(--cor-background);
+}
+
+.produto-item-abacaxi:hover {
+  transform: translateY(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(circle,
+  #b8ab00 75%,
+  #667300 85%,
+  #4d6600 95%,
+  #334d00 100%
+);
+  border: 1.5px solid var(--cor-background);
+  box-shadow: 
+  inset 0 0 10px rgba(255, 220, 50, 0.3),
+  inset 0 0 20px rgba(255, 200, 0, 0.2),
+  0 0 20px rgba(255, 200, 0, 0.4),
+  0 0 30px rgba(255, 180, 0, 0.3);
+  cursor: pointer;
+}
+
+.produto-item-abacaxi:hover img {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6))
+    drop-shadow(0 0 12px rgba(0, 0, 0, 0.9));
+}
+
+.produto-item-uva:hover {
+  transform: translateY(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(circle, #D48FFF 5%, #C488F2 25%, #A960E5 45%, #8E38D8 65%, #7310CB 85%, #6A0DAD 100%);
+  border: 1.5px solid var(--cor-background);
+  box-shadow: 
+  inset 0 0 10px rgba(200, 100, 255, 0.3),
+  inset 0 0 20px rgba(180, 80, 255, 0.2),
+  0 0 20px rgba(180, 80, 255, 0.4),
+  0 0 30px rgba(150, 60, 240, 0.3),
+  0 0 40px rgba(120, 40, 220, 0.2);
+  cursor: pointer;
+}
+
+.produto-item-uva:hover img {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6))
+    drop-shadow(0 0 12px rgba(0, 0, 0, 0.9));
+}
+
+.produto-item-uva:hover p {
+  color: var(--cor-background);
+}
+
+.produto-item-limao:hover {
+  transform: translateY(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(circle, #A8F5A2 15%, #69DD83 35%, #00C853 55%, #00962A 75%, #006400 90%);
+  border: 1.5px solid var(--cor-background);
+  box-shadow: 
+  inset 0 0 10px rgba(80, 255, 80, 0.3),
+  inset 0 0 20px rgba(80, 255, 80, 0.2),
+  0 0 20px rgba(80, 255, 80, 0.4),
+  0 0 30px rgba(60, 240, 60, 0.3),
+  0 0 40px rgba(40, 220, 40, 0.2);
+  cursor: pointer;
+}
+
+.produto-item-limao:hover img {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6))
+    drop-shadow(0 0 12px rgba(0, 0, 0, 0.9));
+}
+
+.produto-item-limao:hover p {
+  color: var(--cor-background);
+}
+
+.produto-item-agua:hover {
+  transform: translateY(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(circle, #ffffff 15%, #e0e0e0 50%, #b0c4de 90%);
+  border: 1.5px solid var(--cor-background);
+  box-shadow: 
+  inset 0 0 8px rgba(255, 255, 255, 0.3),
+  inset 0 0 15px rgba(200, 230, 255, 0.2),
+  0 0 25px rgba(230, 245, 255, 0.3),
+  0 0 35px rgba(180, 220, 255, 0.2),
+  0 0 50px rgba(160, 210, 255, 0.15);
+  cursor: pointer;
+}
+
+.produto-item-agua:hover img {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6))
+    drop-shadow(0 0 12px rgba(0, 0, 0, 0.9));
+}
+
+.imagem-container {
   width: 100%;
+  height: 100%;
+  max-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.5s ease;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
 }
 
-.grid-produtos .imagem-container:hover {
-  transform: scale(1.07);
-}
-
-.grid-produtos .imagem-produto {
-  max-width: 100%;
-  height: auto;
+.imagem-produto {
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  max-width: 600px;
   object-fit: contain;
-  display: block;
 }
 
-.grid-produtos .produto-item p {
+.btn-produto {
+  width: 60%;
+  height: auto;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: var(--cor-secundaria);
+  border: 1.5px solid var(--cor-background);
   color: var(--cor-background);
-  user-select: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-family: var(--fonte-secundaria);
-  margin-top: auto;
-  text-shadow: 1px 1px 0 #999, 1px 1px 0 #777, 2px 2px 0 #555, 3px 3px 0 #333,
-    2px 2px 5px rgba(0, 0, 0, 2);
-  transform: perspective(500px);
+  font-size: 1.05rem;
+  font-weight: 550;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.btn-produto:hover {
+  background-color: #00C853;
+  border: 2px solid var(--cor-textos);
+  transform: scale(1.03);
 }
 
 .carrossel-container {
   position: relative;
-  width: 30%;
-  margin: 50px auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto; /* centraliza horizontalmente */
   overflow: hidden;
   font-size: 1.1rem;
+  display: flex; /* agora justify-content funciona */
+  justify-content: center;
+  align-items: center; /* centraliza vertical */
+  flex-direction: column;
 }
 
 .carrossel-container .grid-produtos-demonstration {
@@ -649,7 +899,6 @@ section p {
 }
 
 .carrossel-container p {
-  color: var(--cor-background);
   margin-top: auto;
   font-size: 2.7rem;
   color: var(--cor-background);
@@ -665,10 +914,6 @@ section p {
   max-width: 100%;
   max-height: 500px;
   transition: transform 0.3s ease-in-out;
-}
-
-.carrossel-container .imagem-produto:hover {
-  transform: scale(1.1);
 }
 
 .seta-carrossel {
@@ -706,25 +951,9 @@ section p {
   right: 20px;
 }
 
-.section-produtos {
-  background-color: radial-gradient(
-    circle,
-    #ffffff 15%,
-    #dddddd 50%,
-    #aaaaaa 90%
-  );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
 
 .section-produtos-lista {
-  background-image: url(./img/Background-grid.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: radial-gradient(circle, #ffe082 50%, #ffca28 90%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -734,9 +963,8 @@ section p {
 
 .section-produtos-lista h1 {
   margin-top: 70px;
-  color: var(--cor-background);
   font-size: 3rem;
-  color: var(--cor-background);
+  color: var(--cor-textos);
   text-shadow: 1px 1px 0 #999, 1px 1px 0 #777, 2px 2px 0 #555, 3px 3px 0 #333,
     2px 2px 5px rgba(0, 0, 0, 2);
   transform: perspective(500px) rotateX(3deg);
@@ -744,16 +972,6 @@ section p {
 
 .section-produtos-lista img {
   max-height: 400px;
-}
-
-.section-produtos h1 {
-  margin-top: 70px;
-  color: var(--cor-background);
-  font-size: 3rem;
-  color: var(--cor-background);
-  text-shadow: 1px 1px 0 #999, 1px 1px 0 #777, 2px 2px 0 #555, 3px 3px 0 #333,
-    2px 2px 5px rgba(0, 0, 0, 2);
-  transform: perspective(500px) rotateX(3deg);
 }
 
 .contact-container {
@@ -1018,7 +1236,7 @@ section p {
   margin-top: 10px;
   font-size: 1.5em;
   font-weight: bold;
-  color: var(--cor-secundaria); 
+  color: var(--cor-secundaria);
 }
 
 .polaroid p {
@@ -1568,7 +1786,7 @@ section p {
   #carrossel-banners {
     position: relative;
     width: 100vw;
-    height: 64vh;
+    height: 90vh;
     overflow: hidden;
   }
 
@@ -1577,7 +1795,11 @@ section p {
   }
 
   .grid-produtos {
-    grid-template-columns: repeat(4, 1fr);
+    max-width: 70vw;
+  }
+
+  .grid-produtos img {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .contact-inputs {
@@ -1603,13 +1825,13 @@ section p {
 
   .Imagem-nossa-historia img {
     width: 100%;
-    max-width: 750px;
+    max-width: 550px;
     height: auto;
     display: block;
     margin: 0 auto;
     object-fit: contain;
   }
-  
+
   .co-packer-exp {
     gap: 30px;
     width: 90vw;
@@ -1900,8 +2122,6 @@ section p {
     height: 35px;
   }
 
-  
-
   .carrossel-container {
     width: 95%;
   }
@@ -1950,7 +2170,7 @@ section p {
   #carrossel-banners {
     position: relative;
     width: 100vw;
-    height:26vh;
+    height: 26vh;
     overflow: hidden;
   }
 
@@ -2013,7 +2233,6 @@ section p {
   .bloco {
     width: 70%;
   }
-
 
   .envase-pet {
     width: 70%;
@@ -2180,7 +2399,7 @@ section p {
   #carrossel-banners {
     position: relative;
     width: 100vw;
-    height:26vh;
+    height: 26vh;
     overflow: hidden;
   }
 
@@ -2266,7 +2485,6 @@ section p {
   .bloco {
     width: 85%;
   }
-  
 
   .envase-pet {
     width: 70%;

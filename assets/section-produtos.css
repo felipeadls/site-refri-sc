@@ -1,0 +1,1427 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fonte-principal: "Poppins", sans-serif;
+  --fonte-secundaria: "Nunito", sans-serif;
+  --cor-primaria: #f3fa33;
+  --cor-sidebar: #686d76;
+  --cor-secundaria: #2e9b4c;
+  --cor-auxiliar: #f90203;
+  --cor-background: #fbfbfb;
+  --cor-textos: #212121;
+}
+
+.descricao-produto {
+  margin: 40px auto;
+  max-width: 1600px;
+  text-align: center;
+}
+
+.coluna-imagem img {
+  width: 190px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.4))
+    drop-shadow(0 0 6px rgba(0, 0, 0, 0.6));
+}
+
+.coluna-textos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.linha-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.container-descricao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 5rem;
+}
+
+#texto-ingredientes {
+  font-size: 1.1rem;
+}
+
+#texto-ingredientes strong {
+  font-size: 1.3rem;
+}
+
+/* Guaraná */
+
+.section-produtos-guarana {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: radial-gradient(circle, #ffff66 15%, #ffc300 50%, #b8860b 90%);
+  z-index: 1;
+}
+
+.section-descricao-guarana {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(to bottom, #f9e56b, #fefda0, #feffc4);
+}
+
+.section-descricao-guarana h2 {
+  font-size: 3.5rem;
+  color: #e6b000;
+text-shadow:
+  0 0 2px #fcd445,          /* brilho suave dourado claro */
+  0 0 4px #ffcc23,          /* luz mais intensa */
+  1px 1px 2px #d4a91a,      /* sombra interna dourada */
+  2px 2px 3px #b38f00,      /* reforço no contraste escuro dourado */
+  3px 3px 5px #000000,      /* sombra sólida */
+  0 0 6px rgba(255, 200, 0, 0.4), /* brilho difuso amarelo */
+  0 0 8px rgba(0, 0, 0, 0.5);
+  transform: perspective(500px);
+  margin-bottom: 3rem;
+}
+
+.coluna-esquerda-guarana {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+}
+
+.coluna-direita-guarana {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+  border-left: 2px solid var(--cor-textos);
+  padding: 3rem;
+}
+
+.coluna-direita-guarana h3 {
+  margin: 0;
+  font-size: 2.3rem;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-guarana h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-textos);
+  text-align: center;
+}
+
+#gluten-guarana {
+  color: #000988;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.coluna-esquerda-guarana p {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.coluna-esquerda-guarana .texto-tabela {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.coluna-direita-guarana p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.5;
+}
+
+.coluna-direita-guarana i {
+  margin: 1rem;
+  font-size: 1.8rem;
+}
+
+.linha-separadora-tabela-guarana {
+  width: 95%;
+  margin: 1.5rem auto;
+  height: 1px;
+  border: none;
+  border-radius: 60%;
+  background: #000000;
+  box-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000,
+    0 0 40px #000000;
+}
+
+.valores-nutricionais-guarana {
+  background: linear-gradient(35deg, #fff9b0 60%, #fff176 80%, #ffee58 95%, #fbc02d 100%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 2);
+  transform: perspective(500px);
+  color: var(--cor-textos);
+  width: 100%;
+}
+
+.titulo-guarana i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.valores-nutricionais-guarana table {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.valores-nutricionais-guarana th,
+.valores-nutricionais-guarana td {
+  padding: 4px 1rem;
+  text-align: left;
+}
+
+.valores-nutricionais-guarana th:last-child,
+.valores-nutricionais-guarana td:last-child {
+  text-align: center;
+}
+
+/* Jubaina */
+
+.section-produtos-jubaina {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: radial-gradient(
+    circle,
+    #ffff00 0%,
+    #ffd700 20%,
+    #daa520 40%,
+    #b8860b 60%,
+    #3b2b0b 80%,
+    #000000 100%
+  );
+  z-index: 1;
+}
+
+.section-descricao-jubaina {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(to bottom, #bfa21f, #f9e56b, #fefda0, #feffc4);
+}
+
+.section-descricao-jubaina h2 {
+  font-size: 3.5rem;
+  color: #ffc400;
+text-shadow:
+  0 0 2px #fff176,            /* brilho suave amarelo-claro */
+  0 0 4px #ffeb3b,            /* camada mais vibrante de luz */
+  1px 1px 2px #fbc02d,        /* sombra dourada interna */
+  2px 2px 3px #c79100,        /* contraste com tom mais escuro */
+  3px 3px 5px #000000,        /* sombra sólida */
+  0 0 6px rgba(255, 200, 0, 0.4), /* brilho difuso */
+  0 0 8px rgba(0, 0, 0, 0.5);
+  transform: perspective(500px);
+  margin-bottom: 3rem;
+}
+
+.coluna-esquerda-jubaina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+}
+
+.coluna-direita-jubaina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+  border-left: 2px solid var(--cor-textos);
+  padding: 3rem;
+}
+
+.coluna-direita-jubaina h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-jubaina h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-textos);
+  text-align: center;
+}
+
+#gluten-jubaina {
+  color: #000988;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.coluna-esquerda-jubaina strong {
+  font-size: 1.2rem;
+}
+
+.coluna-esquerda-jubaina p {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.coluna-esquerda-jubaina .texto-tabela {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.coluna-direita-jubaina p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.5;
+}
+
+.coluna-direita-jubaina i {
+  margin: 1rem;
+  font-size: 1.8rem;
+}
+
+.linha-separadora-tabela-jubaina {
+  width: 95%;
+  margin: 1.5rem auto;
+  height: 1px;
+  border: none;
+  border-radius: 60%;
+  background: #000000;
+  box-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000,
+    0 0 40px #000000;
+}
+
+.valores-nutricionais-jubaina {
+  background: linear-gradient(35deg, #fff4b3 60%, #ffe066 80%, #ffd700 95%, #b8860b 100%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 2);
+  transform: perspective(500px);
+  color: var(--cor-textos);
+  width: 100%;
+}
+
+.titulo-jubaina i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.valores-nutricionais-jubaina table {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.valores-nutricionais-jubaina th,
+.valores-nutricionais-jubaina td {
+  padding: 4px 1rem;
+  text-align: left;
+}
+
+.valores-nutricionais-jubaina th:last-child,
+.valores-nutricionais-jubaina td:last-child {
+  text-align: center;
+}
+
+/* Maçã */
+
+.section-produtos-maca {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: radial-gradient(
+    circle,
+    #fadddd 5%,
+    #ff6666 25%,
+    #ff4d4d 45%,
+    #ff3333 65%,
+    #ff1a1a 85%,
+    #cc0000 100%
+  );
+  z-index: 1;
+}
+
+.section-descricao-maca {
+  text-align: center;
+  padding: 3rem;
+  background: #fcb4b4;
+}
+
+.section-descricao-maca h2 {
+  font-size: 3.5rem;
+  color: #d32f2f; /* vermelho vibrante */
+  text-shadow:
+  0 0 2px #f28b8b,            /* brilho suave vermelho claro */
+  0 0 4px #e53935,            /* camada mais vibrante de luz */
+  1px 1px 2px #b71c1c,        /* sombra vermelha interna escura */
+  2px 2px 3px #7f0000,        /* contraste com tom mais escuro */
+  3px 3px 5px #000000,        /* sombra sólida */
+  0 0 6px rgba(211, 47, 47, 0.4), /* brilho difuso vermelho */
+  0 0 8px rgba(0, 0, 0, 0.5);  
+  transform: perspective(500px);
+  margin-bottom: 3rem;
+}
+
+.coluna-esquerda-maca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.coluna-direita-maca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+  border-left: 1.5px solid var(--cor-background);
+  padding: 3rem;
+}
+
+.coluna-direita-maca h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-maca h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-textos);
+  text-align: center;
+}
+
+#gluten-maca {
+  color: #000988;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.coluna-esquerda-maca strong {
+  font-size: 1.2rem;
+}
+
+.coluna-esquerda-maca p {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.coluna-esquerda-maca .texto-tabela {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.coluna-direita-maca p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.5;
+}
+
+.coluna-direita-maca i {
+  margin: 1rem;
+  font-size: 1.8rem;
+}
+
+.linha-separadora-tabela-maca {
+  width: 100%;
+  margin: 1.5rem auto;
+  height: 1px;
+  border: none;
+  border-radius: 60%;
+  background: #ffffff;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 40px #ffffff;
+}
+
+.valores-nutricionais-maca {
+  background: linear-gradient(35deg, #ffc4c4 60%, #ff8080 80%, #e53935 95%, #8b0000 100%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 2);
+  transform: perspective(500px);
+  color: var(--cor-textos);
+  width: 100%;
+}
+
+.titulo-maca i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.valores-nutricionais-maca table {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.valores-nutricionais-maca th,
+.valores-nutricionais-maca td {
+  padding: 1px 1rem;
+  text-align: left;
+}
+
+.valores-nutricionais-maca th:last-child,
+.valores-nutricionais-maca td:last-child {
+  text-align: center;
+}
+
+/* Black cola */
+
+.section-produtos-black-cola {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: radial-gradient(
+    circle,
+    #f40009 15%,
+    #b90014 35%,
+    #800020 55%,
+    #400010 75%,
+    #000000 90%
+  );
+  z-index: 1;
+}
+
+.section-descricao-black-cola {
+  text-align: center;
+  padding: 3rem;
+  background: #8f0000;
+}
+
+.section-descricao-black-cola h2 {
+  font-size: 3.5rem;
+  color: #ff0000;
+text-shadow:
+  0 0 2px #ff4d4d,             /* brilho rosado leve */
+  0 0 4px #ff6666,             /* camada luminosa média */
+  1px 1px 2px #cc0000,         /* reforço escuro interno */
+  2px 2px 3px #8f0000,         /* tom do fundo para "recorte" */
+  3px 3px 6px #000000,         /* sombra forte escura */
+  0 0 8px rgba(255, 100, 100, 0.5), /* brilho externo coral translúcido */
+  0 0 10px rgba(0, 0, 0, 0.7); 
+  margin-bottom: 3rem;
+}
+
+.coluna-esquerda-black-cola {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.coluna-direita-black-cola {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+  border-left: 1.5px solid var(--cor-background);
+  padding: 3rem;
+}
+
+.coluna-direita-black-cola h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-background);
+}
+
+.coluna-esquerda-black-cola h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-background);
+  text-align: center;
+}
+
+#gluten-black-cola {
+  color: var(--cor-background);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.coluna-esquerda-black-cola strong {
+  font-size: 1.2rem;
+}
+
+.coluna-esquerda-black-cola p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-background);
+}
+
+.coluna-esquerda-black-cola .texto-tabela {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.coluna-direita-black-cola p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.5;
+  color: var(--cor-background);
+}
+
+.coluna-direita-black-cola i {
+  margin: 1rem;
+  font-size: 1.8rem;
+  color: var(--cor-background);
+}
+
+.linha-separadora-tabela-black-cola {
+  width: 100%;
+  margin: 1.5rem auto;
+  height: 1px;
+  border: none;
+  border-radius: 60%;
+  background: #ffffff;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 40px #ffffff;
+}
+
+.valores-nutricionais-black-cola {
+  background: linear-gradient(35deg, #5c0000 60%, #7b0000 80%, #000000 95%, #000000 100%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 2);
+  transform: perspective(500px);
+  color: var(--cor-background);
+  width: 100%;
+}
+
+.titulo-black-cola i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.valores-nutricionais-black-cola table {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.valores-nutricionais-black-cola th,
+.valores-nutricionais-black-cola td {
+  padding: 1px 1rem;
+  text-align: left;
+}
+
+.valores-nutricionais-black-cola th:last-child,
+.valores-nutricionais-black-cola td:last-child {
+  text-align: center;
+}
+
+/* Laranja */
+
+.section-produtos-laranja {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: radial-gradient(circle, #FFA500 15%, #FF8C00 35%, #FF6F00 55%, #E65A00 75%, #D94C00 90%);
+  z-index: 1;
+}
+
+.section-descricao-laranja {
+  text-align: center;
+  padding: 3rem;
+  background: #ffba39;
+}
+
+.section-descricao-laranja h2 {
+  font-size: 3.5rem;
+  color: #fd922d;
+text-shadow:
+  0 0 2px #ffc266,
+  0 0 4px #ffb84d,
+  1px 1px 2px #e67300,
+  2px 2px 3px #b35400,
+  3px 3px 6px #000000,
+  0 0 6px rgba(255, 153, 51, 0.4),
+  0 0 8px rgba(0, 0, 0, 0.6);
+  transform: perspective(500px);
+  margin-bottom: 3rem;
+}
+
+.coluna-esquerda-laranja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.coluna-direita-laranja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+  border-left: 1.5px solid var(--cor-background);
+  padding: 3rem;
+}
+
+.coluna-direita-laranja h3 {
+  margin: 0;
+  font-size: 2.8rem;
+  color: var(--cor-background);
+  text-shadow:
+  0 0 2px rgba(255, 255, 255, 0.8),   /* brilho suave branco */
+  0 0 4px rgba(255, 255, 255, 0.6),   /* camada de luz difusa */
+  1px 1px 2px rgba(204, 170, 0, 0.8), /* sombra dourada leve */
+  2px 2px 4px rgba(153, 102, 0, 0.5), /* sombra âmbar suave */
+  3px 3px 6px rgba(102, 68, 0, 0.3);
+}
+
+.coluna-esquerda-laranja h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-background);
+  text-shadow:
+  0 0 2px rgba(255, 255, 255, 0.6),   /* brilho suave branco */
+  0 0 4px rgba(255, 255, 255, 0.5),   /* camada de luz difusa */
+  1px 1px 2px rgba(204, 170, 0, 0.6), /* sombra dourada leve */
+  2px 2px 4px rgba(153, 102, 0, 0.4), /* sombra âmbar suave */
+  3px 3px 6px rgba(102, 68, 0, 0.2);
+  text-align: center;
+}
+
+#gluten-laranja {
+  color: #000988;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.coluna-esquerda-laranja #texto-ingredientes strong {
+  font-size: 1.3rem;
+  text-shadow:
+  0 0 2px rgba(255, 255, 255, 0.6),   /* brilho suave branco */
+  0 0 4px rgba(255, 255, 255, 0.5),   /* camada de luz difusa */
+  1px 1px 2px rgba(204, 170, 0, 0.6), /* sombra dourada leve */
+  2px 2px 4px rgba(153, 102, 0, 0.4), /* sombra âmbar suave */
+  3px 3px 6px rgba(102, 68, 0, 0.2);
+}
+
+.coluna-esquerda-laranja strong {
+  font-size: 1.2rem;
+}
+
+.coluna-esquerda-laranja p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-background);
+}
+
+.coluna-esquerda-laranja .texto-tabela {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.coluna-direita-laranja p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.5;
+  color: var(--cor-background);
+  text-shadow:
+  0 0 2px rgba(255, 255, 255, 0.6),   /* brilho suave branco */
+  0 0 4px rgba(255, 255, 255, 0.5),   /* camada de luz difusa */
+  1px 1px 2px rgba(204, 170, 0, 0.6), /* sombra dourada leve */
+  2px 2px 4px rgba(153, 102, 0, 0.4), /* sombra âmbar suave */
+  3px 3px 6px rgba(102, 68, 0, 0.2);
+}
+
+.coluna-direita-laranja i {
+  margin: 1rem;
+  font-size: 1.8rem;
+  color: var(--cor-background);
+}
+
+.linha-separadora-tabela-laranja {
+  width: 100%;
+  margin: 1.5rem auto;
+  height: 1px;
+  border: none;
+  border-radius: 60%;
+  background: #ffffff;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 40px #ffffff;
+}
+
+.valores-nutricionais-laranja {
+  background: linear-gradient(35deg, #ff8000 60%, #ff6600 80%, #ff4d00 95%, #cc3300 100%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 2);
+  transform: perspective(500px);
+  color: var(--cor-background);
+  width: 100%;
+}
+
+.titulo-laranja i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.valores-nutricionais-laranja table {
+  width: 100%;
+  font-size: 0.8rem;
+  text-shadow:
+  0 0 2px rgba(255, 255, 255, 0.6),   /* brilho suave branco */
+  0 0 4px rgba(255, 255, 255, 0.5),   /* camada de luz difusa */
+  1px 1px 2px rgba(204, 170, 0, 0.6), /* sombra dourada leve */
+  2px 2px 4px rgba(153, 102, 0, 0.4), /* sombra âmbar suave */
+  3px 3px 6px rgba(102, 68, 0, 0.2);
+}
+
+.valores-nutricionais-laranja th,
+.valores-nutricionais-laranja td {
+  padding: 1px 1rem;
+  text-align: left;
+}
+
+.valores-nutricionais-laranja th:last-child,
+.valores-nutricionais-laranja td:last-child {
+  text-align: center;
+}
+
+/* Abacaxi */
+
+.section-produtos-abacaxi {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  background: radial-gradient(circle,
+  #b8ab00 75%,
+  #667300 85%,
+  #4d6600 95%,
+  #334d00 100%
+);
+  z-index: 1;
+}
+
+.section-descricao-abacaxi {
+  text-align: center;
+  padding: 3rem;
+  background: #f8f847;
+}
+
+.section-descricao-abacaxi h2 {
+  font-size: 3.5rem;
+  color: #3b7a00; /* verde escuro */
+  text-shadow:
+  0 0 2px #7fbf00,            /* brilho verde claro */
+  0 0 4px #5a9c00,            /* camada vibrante de luz verde */
+  1px 1px 2px #3b7a00,        /* sombra verde escura interna */
+  2px 2px 3px #265200,        /* contraste verde mais escuro */
+  3px 3px 5px #152900,        /* sombra sólida bem escura */
+  0 0 6px rgba(59, 122, 0, 0.4), /* brilho difuso verde */
+  0 0 8px rgba(0, 0, 0, 0.5);      /* sombra difusa preta */
+
+  transform: perspective(500px);
+  margin-bottom: 3rem;
+}
+
+.coluna-esquerda-abacaxi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.coluna-direita-abacaxi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+  border-left: 1.5px solid var(--cor-textos);
+  padding: 3rem;
+}
+
+.coluna-direita-abacaxi h3 {
+  margin: 0;
+  font-size: 2.8rem;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-abacaxi h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-textos);
+  text-align: center;
+}
+
+#gluten-abacaxi {
+  color: #000988;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.coluna-esquerda-abacaxi strong {
+  font-size: 1.2rem;
+}
+
+.coluna-esquerda-abacaxi p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-abacaxi .texto-tabela {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.coluna-direita-abacaxi p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.5;
+  color: var(--cor-textos);
+}
+
+.coluna-direita-abacaxi i {
+  margin: 1rem;
+  font-size: 1.8rem;
+  color: var(--cor-textos);
+}
+
+.linha-separadora-tabela-abacaxi {
+  width: 100%;
+  margin: 1.5rem auto;
+  height: 1px;
+  border: none;
+  border-radius: 60%;
+  background: #000000;
+  box-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000,
+    0 0 40px #000000;
+}
+
+.valores-nutricionais-abacaxi {
+  background: linear-gradient(35deg, #e9ffb3 60%, #d4ff66 80%, #bfff00 95%, #80c000 100%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  transform: perspective(500px);
+  color: var(--cor-textos);
+  width: 100%;
+}
+
+.titulo-abacaxi i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.valores-nutricionais-abacaxi table {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.valores-nutricionais-abacaxi th,
+.valores-nutricionais-abacaxi td {
+  padding: 1px 1rem;
+  text-align: left;
+}
+
+.valores-nutricionais-abacaxi th:last-child,
+.valores-nutricionais-abacaxi td:last-child {
+  text-align: center;
+}
+
+/* Uva */
+
+.section-produtos-uva {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: radial-gradient(circle, #D48FFF 5%, #C488F2 25%, #A960E5 45%, #8E38D8 65%, #7310CB 85%, #6A0DAD 100%);
+  z-index: 1;
+}
+
+.section-descricao-uva {
+  text-align: center;
+  padding: 3rem;
+  background: #d1a3ff;
+}
+
+.section-descricao-uva h2 {
+  font-size: 3.5rem;
+  color: #5a2e9e;
+  text-shadow:
+  0 0 2px #a584e0,
+  0 0 4px #8664c9, 
+  1px 1px 2px #5a2e9e,
+  2px 2px 3px #3e1e6b, 
+  3px 3px 5px #1f1138,
+  0 0 6px rgba(90, 46, 158, 0.4),
+  0 0 8px rgba(0, 0, 0, 0.5); 
+  transform: perspective(500px);
+  margin-bottom: 3rem;
+}
+
+.coluna-esquerda-uva {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.coluna-direita-uva {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+  border-left: 1.5px solid var(--cor-textos);
+  padding: 3rem;
+}
+
+.coluna-direita-uva h3 {
+  margin: 0;
+  font-size: 2.8rem;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-uva h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-textos);
+  text-align: center;
+}
+
+#gluten-abacaxi {
+  color: #4b0082;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.coluna-esquerda-uva strong {
+  font-size: 1.2rem;
+}
+
+.coluna-esquerda-uva p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-uva .texto-tabela {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.coluna-direita-uva p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.5;
+  color: var(--cor-textos);
+}
+
+.coluna-direita-uva i {
+  margin: 1rem;
+  font-size: 1.8rem;
+  color: var(--cor-textos);
+}
+
+.linha-separadora-tabela-uva {
+  width: 100%;
+  margin: 1.5rem auto;
+  height: 1px;
+  border: none;
+  border-radius: 60%;
+  background: #4b0082;
+  box-shadow: 0 0 5px #4b0082, 0 0 10px #800080, 0 0 20px #9932cc,
+              0 0 40px #ba55d3;
+}
+
+.valores-nutricionais-uva {
+  background: linear-gradient(35deg, #d9b3ff 60%, #bf80ff 80%, #a64dff 95%, #800080 100%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  transform: perspective(500px);
+  color: var(--cor-textos);
+  width: 100%;
+}
+
+.titulo-uva i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.valores-nutricionais-uva table {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.valores-nutricionais-uva th,
+.valores-nutricionais-uva td {
+  padding: 1px 1rem;
+  text-align: left;
+}
+
+.valores-nutricionais-uva th:last-child,
+.valores-nutricionais-uva td:last-child {
+  text-align: center;
+}
+
+
+/* Limão */
+
+.section-produtos-limao {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: radial-gradient(circle, #A8F5A2 15%, #69DD83 35%, #00C853 55%, #00962A 75%, #006400 90%);
+  z-index: 1;
+}
+
+.section-descricao-limao {
+  text-align: center;
+  padding: 3rem;
+  background: #69DD83;
+}
+
+.section-descricao-limao h2 {
+  font-size: 3.5rem;
+  color: #00962A;
+  text-shadow:
+  0 0 2px #a6e99c,
+  0 0 4px #7fd87c,
+  1px 1px 2px #4caf50,
+  2px 2px 3px #00962A,
+  2px 2px 6px #66ff66,
+  3px 3px 5px #999999,
+  0 0 8px rgba(255, 255, 255, 0.7);
+  transform: perspective(500px);
+  margin-bottom: 3rem;
+}
+
+.coluna-esquerda-limao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.coluna-direita-limao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+  border-left: 1.5px solid var(--cor-textos);
+  padding: 3rem;
+}
+
+.coluna-direita-limao h3 {
+  margin: 0;
+  font-size: 2.8rem;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-limao h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-textos);
+  text-align: center;
+}
+
+#gluten-abacaxi {
+  color: #000988;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.coluna-esquerda-limao strong {
+  font-size: 1.2rem;
+}
+
+.coluna-esquerda-limao p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-limao .texto-tabela {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.coluna-direita-limao p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.5;
+  color: var(--cor-textos);
+}
+
+.coluna-direita-limao i {
+  margin: 1rem;
+  font-size: 1.8rem;
+  color: var(--cor-textos);
+}
+
+.linha-separadora-tabela-limao {
+  width: 100%;
+  margin: 1.5rem auto;
+  height: 1px;
+  border: none;
+  border-radius: 60%;
+  background: #000000;
+  box-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000,
+    0 0 40px #000000;
+}
+
+.valores-nutricionais-limao {
+  background: linear-gradient(35deg, #b2f2bb 60%, #69f0ae 80%, #00c853 95%, #006400 100%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  transform: perspective(500px);
+  color: var(--cor-textos);
+  width: 100%;
+}
+
+.titulo-limao i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.valores-nutricionais-limao table {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.valores-nutricionais-limao th,
+.valores-nutricionais-limao td {
+  padding: 1px 1rem;
+  text-align: left;
+}
+
+.valores-nutricionais-limao th:last-child,
+.valores-nutricionais-limao td:last-child {
+  text-align: center;
+}
+
+/* Água com gás */
+
+.section-produtos-agua {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: radial-gradient(circle, #ffffff 15%, #e0e0e0 50%, #b0c4de 90%);
+  z-index: 1;
+}
+
+.section-descricao-agua {
+  text-align: center;
+  padding: 3rem;
+  background: #69DD83;
+}
+
+.section-descricao-agua h2 {
+  font-size: 3.5rem;
+  color: #00962A;
+  text-shadow:
+    0 0 2px #a6e99c,
+    0 0 4px #7fd87c,
+    1px 1px 2px #4caf50,
+    2px 2px 3px #00962A,
+    2px 2px 6px #66ff66,
+    3px 3px 5px #999999,
+    0 0 8px rgba(255, 255, 255, 0.7);
+  transform: perspective(500px);
+  margin-bottom: 3rem;
+}
+
+.coluna-esquerda-agua {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.coluna-direita-agua {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+  border-left: 1.5px solid var(--cor-textos);
+  padding: 3rem;
+}
+
+.coluna-direita-agua h3 {
+  margin: 0;
+  font-size: 2.8rem;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-agua h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--cor-textos);
+  text-align: center;
+}
+
+#gluten-abacaxi {
+  color: #000988;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.coluna-esquerda-agua strong {
+  font-size: 1.2rem;
+}
+
+.coluna-esquerda-agua p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-textos);
+}
+
+.coluna-esquerda-agua .texto-tabela {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.coluna-direita-agua p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.5;
+  color: var(--cor-textos);
+}
+
+.coluna-direita-agua i {
+  margin: 1rem;
+  font-size: 1.8rem;
+  color: var(--cor-textos);
+}
+
+.linha-separadora-tabela-agua {
+  width: 100%;
+  margin: 1.5rem auto;
+  height: 1px;
+  border: none;
+  border-radius: 60%;
+  background: #000000;
+  box-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000,
+    0 0 40px #000000;
+}
+
+.valores-nutricionais-agua {
+  background: linear-gradient(35deg, #b2f2bb 60%, #69f0ae 80%, #00c853 95%, #006400 100%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  transform: perspective(500px);
+  color: var(--cor-textos);
+  width: 100%;
+}
+
+.titulo-agua i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.valores-nutricionais-agua table {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.valores-nutricionais-agua th,
+.valores-nutricionais-agua td {
+  padding: 1px 1rem;
+  text-align: left;
+}
+
+.valores-nutricionais-agua th:last-child,
+.valores-nutricionais-agua td:last-child {
+  text-align: center;
+}
+
+
+[class^="section-produtos"] h1 {
+  margin-top: 70px;
+  font-size: 2.5rem;
+  color: var(--cor-background);
+text-shadow:
+  1px 1px 0 #999999,
+  2px 2px 0 #777777,
+  3px 3px 0 #555555,
+  4px 4px 0 #333333,
+  2px 2px 5px rgba(0, 0, 0, 0.7),
+  0 0 8px rgba(255, 255, 255, 0.7);
+  transform: perspective(500px);
+}
+
+[class^="section-produtos"] {
+  text-align: center;
+  align-items: center;
+}
+
+.bolhas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.bolhas span {
+  position: absolute;
+  bottom: -50px;
+  display: block;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: inset 5px 5px 15px rgba(255, 255, 255, 1),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.5);
+  animation: subirBolha linear infinite;
+  opacity: 1;
+  animation-fill-mode: forwards;
+  z-index: 0;
+}
+
+
+@keyframes subirBolha {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.5);
+    opacity: 0;
+  }
+}
